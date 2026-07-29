@@ -1,0 +1,22 @@
+[project]
+name = "nutrition-helper"
+version = "0.1.0"
+description = "Telegram nutrition diary bot with KBJU estimates and wellbeing tracking"
+requires-python = ">=3.9"
+dependencies = [
+  "python-telegram-bot>=21.0",
+  "python-dotenv>=1.0.1",
+  "openai>=1.99.0",
+  "apscheduler>=3.10.4",
+  "imageio-ffmpeg>=0.6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
